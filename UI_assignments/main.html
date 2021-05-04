@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>UI Basic Assignment</title>
+    <link rel="stylesheet" href="./Assets/fonts/font-awesome-4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href=".\Assets\fonts\eleganticons\et-icons.css">
+    <link rel="stylesheet" type="text/css" href=".\Assets\fonts\font-awesome-4.1.0\css\font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <script>
+     window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  // console.log("scrolled");
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.cssText='background-color:white; margin-top:0px;'
+    document.getElementById("logo").src='./Assets/logo-active.png';
+  } else {
+    document.getElementById("navbar").style.cssText='background : none';
+    document.getElementById("logo").src='./Assets/logo.png';
+  }
+}
+    var i = 0;
+    var txt = 'Its the only place you have to live.';
+    var speed = 50;
+
+    function typing() {
+    if (i < txt.length) {
+      document.getElementById("intro").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typing, speed);
+    }
+    }
+    function changecss(className){
+      var x=className+"img";
+      var px="p"+className[9];
+      document.getElementById(className).style.cssText='border:1px solid #00a8fe;'
+      document.getElementById(x).style.cssText='margin-top:-17px; background-color:white; '
+      document.getElementById(px).style.cssText='display:block;'
+    }
+    function change2(className){
+      var x=className+"img";
+      var px="p"+className[9];
+      document.getElementById(className).style.cssText='border: 1px solid #b5bac0;'
+      document.getElementById(x).style.cssText='margin: 90px 120px 20px 120px; '
+      document.getElementById(px).style.cssText='display:none;'
+    }
+    </script>
+
+  </head>
+  <body onload="typing()">
+    <section id="title1">
+      <div  class="container-fluid">
+    <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
+      <a class="navbar-brand" href="#"><img id="logo" src="./Assets/logo.png"></a>
+      <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse ml-5" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto"> 
+          <li class="nav-item">
+              <a class="nav-link active" href="#intro">Intro</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn bg-info">Sign Up</button>
+        </li>
+      </ul>
+      </div>
+  </nav>
+  </div>
+  <div class="main-txt">
+   Take care of your body.
+   <h1 id="intro"></h1>
+   </div>
+  </section>
+  <section class="features text-white" id="intro">
+      <div class="row">
+      <div class="feature-box col-lg-4 m-3" id="first">
+        <div class="heading1 m-3 mb-5">&nbsp;
+        <span class="me-5">Today's Schedule </span>&nbsp;
+          <span class="square me-2">  </span>
+          <span class="square1 me-2">  </span>
+          <span class="square1">  </span>
+        </div>
+        <br>
+        <div>
+          <table class="m-3">
+            <tr>
+              <td>Early Exercise</td>
+              <td>8:30-10:00</td>
+            </tr>
+            <tr>
+              <td>Muscle Binding</td>
+              <td>8:30-10:00</td>
+            </tr>
+            <tr>
+              <td>Cardio</td>
+              <td>8:30-10:00</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="feature-box col-lg-4 m-3" id="second">
+        <div class="heading1 m-3 mb-5">
+        <p>Premium Membership</p>
+        </div>
+        <br />
+        <br />
+        <br />
+        <h5>Register Today</h5>
+        <h5>20% Discount</h5>
+      </div>
+      <div class="feature-box col-lg-4 m-3" id="third">
+        <div class="heading1 m-3 mb-5">
+        <span class="me-5">Happy Clients </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span class="square me-2">  </span>
+          <span class="square1 me-2">  </span>
+          <span class="square1">  </span>
+          <br><br>
+        </div>
+        <h5>I couldn't be more happy with the results!</h5>
+        <br><br>
+        <p>Adam john</p>
+      </div>
+      </div>
+    </section>
+    <section class="services" id="services">
+      <div class="service-head">
+        <h1>Services</h1>
+        <p class="text-secondary">Achieve the best results with our wide variety of training options.</p>
+      </div>
+      <div class="service-box">
+        <div class="row">
+        <div class="col-lg-4" id="train-1">
+          <div class="train-box" id="train-box1" onmouseover="changecss(id)" onmouseout="change2(id)">
+          <img id="train-box1img" src="Assets/icons/heart-blue.png">
+          <h5 class="m-4">Cardio Training</h5>
+          <p class="text-secondary swipeup" id="p1">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="train-box" id="train-box2" onmouseover="changecss(id)" onmouseout="change2(id)">
+          <img id="train-box2img" src="Assets/icons/guru-blue.png">
+          <h5 class="m-4">Yoga Pilates</h5>
+          <p class="text-secondary swipeup" id="p2">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">  
+          <div class="train-box" id="train-box3" onmouseover="changecss(id)"  onmouseout="change2(id)">
+          <img id="train-box3img" src="Assets/icons/weight-blue.png">
+          <br>
+          <h5 class="m-4">Power Training</h5>
+          <p class="text-secondary swipeup" id="p3"> A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
+        </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <br><br><br>
+      <br><br><br>
+    </section>
+  </body>
+  
+</html>

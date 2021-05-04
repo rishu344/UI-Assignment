@@ -1,0 +1,161 @@
+
+body, html {
+  height: 100%;
+}
+
+
+.title1,
+.features {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+span.header1{
+  display: inline;
+  margin-top: 100px;
+}
+span.square {
+  display: inline-block;
+  padding: 4px;
+  /* border: 1px solid blue;     */
+  background-color: white;
+}
+span.square1 {
+  display: inline-block;
+  padding: 3px;
+  /* background-color: white; */
+  border: 1px solid white;
+}
+
+#title1{
+  background-image: url("../Assets/header.jpg");
+  width: 100%;
+  height: 108%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: polygon(100% 93%, 100% 0, 0 0, 0 100%);
+  
+}
+.features{
+  background-color:#fff;
+  justify-content:space-around;
+  margin: 20px auto 0;
+  height:50px;
+  bottom: 0px;
+  /* width:90%; */
+}
+
+.logo{
+  background-image: url('../Assets/logo.png');
+  height: 45px;
+  width: 45px;
+}
+.swipeup {
+  display: none;
+}
+
+
+.main-txt{
+  color:white;
+    margin: auto;
+  margin-top: 250px;
+  width: 50%;
+  text-align: center;
+/* margin-bottom: 80px; */
+}
+
+.container-fluid{
+  padding: 3% 15%;
+  margin-left: 100px;
+  color:white;
+}
+
+.navbar-brand{
+  margin-left: 200px;
+}
+
+.navbar-collapse{
+  margin-right: 200px;
+  color: white;
+}
+
+.nav-item{
+  color:white;
+  padding: 0% 18px;
+}
+#first{
+  background-image: url("../Assets/table-1.jpg");
+  width: 300px;
+  height: 250px;
+    z-index:1;
+    
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  height: 100%;
+  bottom: 0px;
+}
+
+th, td {
+  padding: 5px;
+  text-align: left;
+  border-bottom: 1px solid white;
+}
+
+#second{
+  background-image: url("../Assets/table-2.jpg");
+  width: 300px;
+  height: 250px;
+  z-index:1;
+  
+}
+
+#third{
+  background-image: url("../Assets/table-3.jpg");
+  width: 300px;
+  height: 250px;
+  z-index:1;
+}
+
+.service-head{
+  text-align: center;
+  margin-top: 300px;
+  margin-bottom: 150px;
+}
+
+.service-box{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.train-box{
+  height: 270px;
+  width: 300px;
+  border: 1px solid #b5bac0;
+  /* display: flex; */
+  align-items:center;
+  justify-content:center;
+  /* padding: 130px; */
+  text-align: center;
+}
+
+.services img{
+  margin: 90px 120px 20px 120px; 
+  width: 40px;
+  height: 40px;
+  justify-content:center;
+  /* padding: 130px; */
+  text-align: center;
+}
+
+.fixed-top{
+  margin-top: 40px;
+}
+
+.navbar a{
+  color: white;
+}
